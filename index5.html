@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire d'inscription</title>
+    <link rel="stylesheet" href="style5.css">
+</head>
+<body>
+    <h1>Formulaire d'inscription</h1>
+    <form id="registrationForm">
+        <!-- Champ pour le pseudo -->
+        <div class="form-group">
+            <label for="pseudo">Pseudo</label>
+            <input type="text" id="pseudo" name="pseudo">
+        </div>
+        <!-- Champ pour l'email -->
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email">
+        </div>
+        <!-- Champ pour le mot de passe -->
+        <div class="form-group">
+            <label for="password">Mot de passe</label>
+            <input type="password" id="password" name="password">
+        </div>
+        <!-- Champ pour la vérification du mot de passe -->
+        <div class="form-group">
+            <label for="confirmPassword">Entrer à nouveau le mot de passe</label>
+            <input type="password" id="confirmPassword" name="confirmPassword">
+        </div>
+        <!-- Question QCM pour le genre -->
+        <div class="form-group">
+            <label>Choisissez votre genre :</label>
+            <input type="radio" name="gender" value="Homme"> Homme<br>
+            <input type="radio" name="gender" value="Femme"> Femme<br>
+            <input type="radio" name="gender" value="Autre"> Autre
+        </div>
+        <!-- Bouton pour soumettre le formulaire -->
+        <button type="button" onclick="validateForm()">S'inscrire</button>
+        <!-- Zone pour afficher les messages d'erreur ou de succès -->
+        <div id="message" class="message" style="display: none;"></div>
+    </form>
+    <script src="main5.js"></script>
+</body>
+</html>
